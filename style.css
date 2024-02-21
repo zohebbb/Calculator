@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(46, 45, 45);
+}
+
+.main {
+  background-color: black;
+  width: 280px;
+  color: white;
+  margin: 100px;
+  font-size: 24px;
+}
+
+.screen {
+  text-align: right;
+  text-align: bottom;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 40px 10px 8px 10px;
+  font-size: 30px;
+}
+
+.cal-body {
+  padding: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.row1 {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.row5 {
+  grid-template-columns: 3fr 1fr;
+}
+
+.button {
+  text-align: center;
+  padding: 10px;
+  margin: 5px 4px;
+  border-radius: 100%;
+  background-color: #343131;
+}
+
+.button:hover {
+  background-color: #545050;
+  cursor: pointer;
+}
+
+.back {
+  background-color: #4c1d1d;
+}
+
+.back:hover {
+  background-color: #5f2222;
+  cursor: pointer;
+}
+
+.button:last-child {
+  background-color: rgb(212, 161, 42);
+}
+
+.button:last-child:hover {
+  background-color: rgb(246, 185, 43);
+  cursor: pointer;
+}
+
+.clear {
+  background-color: rgb(28, 28, 80);
+}
+
+.clear:hover {
+  background-color: rgb(38, 38, 110);
+  cursor: pointer;
+}
+
+.zero,
+.clear {
+  border-radius: 190px;
+}
+
+@media only screen and (max-width: 445px) {
+  .main {
+    margin: 10px;
+    width: 90%; /* Adjust the width for phones */
+    height: 90%;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  .cal-body {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
